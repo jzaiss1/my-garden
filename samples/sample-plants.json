@@ -1,0 +1,110 @@
+{
+  "plants": [
+    {
+      "Merlin Lenten Rose": {
+        "blooms": "Winter Spring",
+        "details": null,
+        "fertilization": null,
+        "hardiness": "-10 to -20 F",
+        "spacing": null,
+        "statusID": null,
+        "tags": [
+          "Deer Resistant",
+          "Perennial",
+          "Partial Sun"
+        ],
+        "totalSize": "10-13\" H x 15\" W",
+        "watering": "Low, once established",
+        "zones": null
+      }
+    },
+    {
+      "French Kiss": {
+        "blooms": "Early Spring to Mid-Spring",
+        "details": "Honeymoon Series Lenten Rose",
+        "fertilization": null,
+        "hardiness": null,
+        "spacing": "18-24\"",
+        "statusID": null,
+        "tags": [
+          "Part Shade",
+          "Full Shade",
+          "Perennial"
+        ],
+        "totalSize": "18-24\" H",
+        "watering": null,
+        "zones": "4-9"
+      }
+    },
+    {
+      "Spanish Flare": {
+        "blooms": "Early Spring to Mid-Spring",
+        "details": "Honeymoon Series Lenten Rose",
+        "fertilization": null,
+        "hardiness": null,
+        "spacing": "18-24\"",
+        "statusID": null,
+        "tags": [
+          "Part Shade",
+          "Full Shade",
+          "Perennial"
+        ],
+        "totalSize": "18-24\" H",
+        "watering": null,
+        "zones": "4-9"
+      }
+    },
+    {
+      "Guacamole Coral Bells": {
+        "blooms": "Spring Summer",
+        "details": null,
+        "fertilization": "Spring and Summer",
+        "hardiness": "-20 to -30 F",
+        "spacing": "12-24\"",
+        "statusID": null,
+        "tags": [
+          "Perennial",
+          "Morning Sun",
+          "Deer Resistant"
+        ],
+        "totalSize": "12-24\" H x 12-24\" W",
+        "watering": "Keep moist first year, 2 x per week after",
+        "zones": null
+      }
+    },
+    {
+      "Rockin Fuchsia": {
+        "blooms": "Planting to Frost",
+        "details": "Deadheading not necessary",
+        "fertilization": "Regularly for best results",
+        "hardiness": "32 F",
+        "spacing": "18\" to 24\"",
+        "statusID": null,
+        "tags": [
+          "Full Sun",
+          "Part Sun"
+        ],
+        "totalSize": "24-36\" Tall",
+        "watering": "Normal",
+        "zones": "Annual except 10a-11b"
+      }
+    },
+    {
+      "Pyromania Backdraft": {
+        "blooms": "Early to midsummer",
+        "details": null,
+        "fertilization": null,
+        "hardiness": "-15 F",
+        "spacing": "24\" to 30\"",
+        "statusID": null,
+        "tags": [
+          "Full Sun",
+          "Perennial"
+        ],
+        "totalSize": "30-36\" Tall",
+        "watering": "Good supply of water",
+        "zones": "5b-9"
+      }
+    }
+  ]
+}

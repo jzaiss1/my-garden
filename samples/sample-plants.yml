@@ -1,0 +1,83 @@
+plants:
+  - Merlin Lenten Rose:
+      watering: Low, once established
+      hardiness: -10 to -20 F
+      fertilization: ~
+      totalSize: 10-13" H x 15" W
+      spacing: ~
+      blooms: Winter Spring
+      details: ~
+      tags:
+        - Deer Resistant
+        - Perennial
+        - Partial Sun
+      statusID: ~
+      zones: ~
+  - French Kiss:
+      watering: ~
+      hardiness: ~
+      fertilization: ~
+      totalSize: 18-24" H
+      spacing: 18-24"
+      blooms: Early Spring to Mid-Spring
+      details: Honeymoon Series Lenten Rose
+      tags:
+        - Part Shade
+        - Full Shade
+        - Perennial
+      statusID: ~
+      zones: 4-9
+  - Spanish Flare:
+      watering: ~
+      hardiness: ~
+      fertilization: ~
+      totalSize: 18-24" H
+      spacing: 18-24"
+      blooms: Early Spring to Mid-Spring
+      details: Honeymoon Series Lenten Rose
+      tags:
+        - Part Shade
+        - Full Shade
+        - Perennial
+      statusID: ~
+      zones: 4-9
+  - Guacamole Coral Bells:
+      watering: Keep moist first year, 2 x per week after
+      hardiness: -20 to -30 F
+      fertilization: Spring and Summer
+      totalSize: 12-24" H x 12-24" W
+      spacing: 12-24"
+      blooms: Spring Summer
+      details: ~
+      tags:
+        - Perennial
+        - Morning Sun
+        - Deer Resistant
+      statusID: ~
+      zones: ~
+  - Rockin Fuchsia:
+      watering: Normal
+      hardiness: 32 F
+      fertilization: Regularly for best results
+      totalSize: 24-36" Tall
+      spacing: 18" to 24"
+      blooms: Planting to Frost
+      details: Deadheading not necessary
+      tags:
+        - Full Sun
+        - Part Sun
+      statusID: ~
+      zones: Annual except 10a-11b
+  - Pyromania Backdraft:
+      watering: Good supply of water
+      hardiness: -15 F
+      fertilization: ~
+      totalSize: 30-36" Tall
+      spacing: 24" to 30"
+      blooms: Early to midsummer
+      details: ~
+      tags:
+        - Full Sun
+        - Perennial
+      statusID: ~
+      zones: 5b-9

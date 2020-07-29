@@ -47,6 +47,8 @@ CREATE TABLE Plants
 	totalSize			VARCHAR(100),
 	spacing				VARCHAR(100),
 	details				VARCHAR(100),
+	blooms				VARCHAR(100),
+	zones					VARCHAR(45),
 	statusID			INT						NULL		REFERENCES Status_tbl (StatusID),
 	INDEX 				statusID_idx 	(statusID ASC)
 );
