@@ -1,4 +1,4 @@
-# mygarden-api
+# My Garden API Server
 
 ## Initial Ubuntu Server Setup
 
