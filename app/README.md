@@ -116,7 +116,7 @@ Before installing applications within the virtual environment, you need to activ
 source mygardenenv/bin/activate
 ```
 
-## Set up Flask Application
+## Set up Flask to host the application
 
 Install Wheel
 
@@ -127,7 +127,62 @@ pip install wheel
 Install Flask and uWSGI
 
 ```bash
-pip install uwsgi flask flask-mysqldb
+pip install uwsgi flask flask-mysql
+```
+
+## My Garden Application files
+
+See `mygarden.py` for the application code
+
+See `wsgi.py` for the uWSGI Entry Point
+
+See `mygarden.ini` for the uWSGI Configuration
+
+## Create the systemd Unit File
+
+See `mygarden.service` for the configuration
+
+```bash
+sudo cp mygarden.service /etc/systemd/system/ 
+```
+
+Configure the mygarden uWSGI service and enable to start at boot
+
+```bash
+sudo systemctl start mygarden
+sudo systemctl enable mygarden
+```
+
+## Configure Nginx to Proxy Requests
+
+See `mygarden` for the block configuration
+
+```bash
+sudo cp mygarden /etc/nginx/sites-available/
+```
+
+Link the file to the `sites-enabled` directory
+
+```bash
+sudo ln -s /etc/nginx/sites-available/mygarden /etc/nginx/sites-enabled
+```
+
+Test the configuration
+
+```bash
+sudo nginx -t
+```
+
+Restart the Nginx process
+
+```bash
+sudo systemctl restart nginx
+```
+
+Configure the Firewall
+
+```bash
+sudo ufw allow 'Nginx Full'
 ```
 
 ## References

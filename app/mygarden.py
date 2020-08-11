@@ -1,13 +1,16 @@
 from flask import Flask
 from flaskext.mysql import MySQL
+from dbconn import *
 
 app = Flask(__name__)
 mysql = MySQL(app)
 
-app.config['MYSQL_DATABASE_USER'] = ''
-app.config['MYSQL_DATABASE_PASSWORD'] = ''
-app.config['MYSQL_DATABASE_DB'] = ''
-app.config['MYSQL_DATABASE_HOST'] = ''
+mygardendb = MyGardenDB()
+
+app.config['MYSQL_DATABASE_USER'] = mygardendb.MYSQL_DATABASE_USER
+app.config['MYSQL_DATABASE_PASSWORD'] = mygardendb.MYSQL_DATABASE_PASSWORD
+app.config['MYSQL_DATABASE_DB'] = mygardendb.MYSQL_DATABASE_DB
+app.config['MYSQL_DATABASE_HOST'] = mygardendb.MYSQL_DATABASE_HOST
 
 mysql = MySQL()
 mysql.init_app(app)
