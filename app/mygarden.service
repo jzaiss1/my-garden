@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve mygarden
+After=network.target
+
+[Service]
+User=garden
+Group=www-data
+WorkingDirectory=/home/garden/mygarden
+Environment="PATH=/home/garden/mygarden/mygardenenv/bin"
+ExecStart=/home/garden/mygarden/mygardenenv/bin/uwsgi --ini mygarden.ini
+
+[Install]
+WantedBy=multi-user.target

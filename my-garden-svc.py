@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
   host="",
   user="",
   passwd="",
-  database='mygarden'
+  database=''
 )
 
 mycursor = mydb.cursor()
@@ -19,12 +19,7 @@ def convertPhoto(imageFile):
         binaryData = file.read()
     return binaryData
 
-def processPlant():
-# Testing with a sample file 
-# Need to replace with json payload from API  
-  with open('samples/sample-plants.json') as f:
-    data = json.load(f)
-
+def processPlant(data):
   plants = data['plants']
   for plant in plants:
     p = plant['name']
@@ -42,4 +37,32 @@ def processPlant():
     mycursor.execute(sql, val)
     mydb.commit()
 
-processPlant()
+def queryAllPlants():
+    mycursor = mydb.cursor()
+
+    columns = "plantName, watering, hardiness, totalSize, fertilization, spacing, details, blooms, zones"
+    qry =  "SELECT {} ".format(columns)
+
+    table = "Plants"
+    qry += "FROM {} ".format(table)
+
+    # filt = "name=''"
+    # qry += "WHERE {} ".format(filt)
+
+    #options = "LIMIT 0, 10000"
+    options = ""
+    qry += "{}".format(options)
+
+    mycursor.execute(qry)
+
+    myresult = mycursor.fetchall()
+
+    for x in myresult:
+      print(x)
+
+# with open('samples/sample-plants.json') as f:
+#   data = json.load(f)
+
+# processPlant(data)
+
+queryAllPlants()
