@@ -41,7 +41,7 @@ def search():
         data = cur.fetchall()
         # all in the search box will return all the tuples
         if len(data) == 0 and plant == 'all': 
-            cur.execute("SELECT * from PlantsBook")
+            cur.execute("SELECT * from Plants")
             conn.commit()
             data = cur.fetchall()
         return render_template('search.html', data=data)
