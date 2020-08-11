@@ -45,7 +45,7 @@ def search():
             conn.commit()
             data = cur.fetchall()
         return render_template('search.html', data=data)
-    return render_template('search.html')
+    return render_template('search.html', data=data)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
