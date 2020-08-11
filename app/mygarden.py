@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from flaskext.mysql import MySQL
 from dbconn import *
 
@@ -30,6 +30,22 @@ def users():
     cur.execute("SELECT * FROM Plants")
     rv = cur.fetchall()
     return str(rv)
+
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    if request.method == "POST":
+        plant = request.form['plant']
+        # search by author or book
+        cursor.execute("SELECT * from Plants WHERE plantName LIKE %s OR details LIKE %s", (plant, plant))
+        conn.commit()
+        data = cursor.fetchall()
+        # all in the search box will return all the tuples
+        if len(data) == 0 and plant == 'all': 
+            cursor.execute("SELECT * from PlantsBook")
+            conn.commit()
+            data = cursor.fetchall()
+        return render_template('search.html', data=data)
+    return render_template('search.html')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
