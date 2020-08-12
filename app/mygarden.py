@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flaskext.mysql import MySQL
 from dbconn import *
+import json
 
 app = Flask(__name__)
 mysql = MySQL(app)
@@ -25,22 +26,27 @@ def hello():
 def style():
     return "<h1 style='color:green'>Style Guide</h1>"
 
+# API enpoint to return all plants in the DB in json format
 @app.route('/plants')
 def users():
     cur.execute("SELECT * FROM Plants")
     rv = cur.fetchall()
-    return str(rv)
+    row_headers=[x[0] for x in cur.description] #this will extract row headers
+    json_data=[]
+    for result in rv:
+        json_data.append(dict(zip(row_headers,result)))
+    return json.dumps(json_data)
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     if request.method == "POST":
         plant = request.form['plant']
-        # search by author or book
-        cur.execute("SELECT * from Plants WHERE plantName LIKE %s OR details LIKE %s", (plant, plant))
+        # search by plantName
+        cur.execute("SELECT PlantID, plantName, zones from Plants WHERE plantName LIKE %s", (plant))
         conn.commit()
         data = cur.fetchall()
         # all in the search box will return all the tuples
-        if len(data) == 0 and plant == 'all': 
+        if len(data) == 0 and plant == 'all':
             cur.execute("SELECT * from Plants")
             conn.commit()
             data = cur.fetchall()
@@ -49,3 +55,4 @@ def search():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
+
