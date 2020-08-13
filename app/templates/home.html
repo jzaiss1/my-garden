@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Final Project SWDV640 -->
+    <!-- John Zaiss -->
+<head>
+    <title>Greenious Resale Responsive Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/theme.css">
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/mustache.js"></script>
+    <script type="text/javascript" src="/static/js/data.js"></script>
+</head>
+
+<body>
+    <script id="template" type="x-tmpl-mustache">
+        {{#preview}}
+            <div class="row">
+                <div class="col">
+                    <div class="articlePreview">
+                        <b>{{title}}</b>
+                        <br>
+                        <p>{{abstract}}</p>
+                    </div>
+                </div>
+            </div>
+        {{/preview}}
+    </script>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12"> 
+                    <img id="header" src="Picture1.png" alt="Greenious Resale, Green, Genius equals Greenious">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <ul class="topnav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="create.html">Create</a></li>
+                        <li><a href="build.html">Build</a></li>
+                        <li class="right"><a href="shop.html">Shop</a></li>
+                    </ul>
+                    </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-8" >
+                    <div class="article">
+                        <h1>Cool Article</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div id="previewList"></div>
+                </div>   
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12"> 
+                    <div class="largeArticle">
+                        <h2>Large content Area</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, simul legendos ius eu. Verterem adversarium est ex, ex quo erat definitiones, vide dictas mei ea. Eius malorum percipit ex eam, in porro partem vix. Facer ridens oportere ne vim, alii enim meis ut vim, at iudico iisque eam. Nec volumus referrentur at, ad nostro ullamcorper interpretaris pro. Ea sit movet moderatius, epicuri rationibus interpretaris cu pro, an quo tollit civibus scaevola.
+                            Luptatum accommodare sed ad, idque corrumpit te eos. Ex mei populo possit qualisque, mea ex velit tantas oporteat. Noster oportere forensibus ad qui. Has ex alii autem latine. Qui tation inermis voluptua te, at nec voluptatum repudiandae. Quis tempor id mei.
+                        </p>
+                    </div>
+                </div>
+            </div>   
+    </div>
+</body>
+
+</html>

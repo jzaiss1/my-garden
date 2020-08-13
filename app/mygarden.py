@@ -20,14 +20,13 @@ cur = conn.cursor()
 
 @app.route("/")
 def hello():
-    return "<h1 style='color:blue'>Hello There!</h1>"
+    return render_template('home.html')
 
 @app.route("/style")
 def style():
-    return "<h1 style='color:green'>Style Guide</h1>"
+    return render_template('style-guide.html')
 
-# API enpoint to return all plants in the DB in json format
-@app.route('/plants')
+@app.route('/api/plants')
 def users():
     cur.execute("SELECT * FROM Plants")
     rv = cur.fetchall()
@@ -55,4 +54,3 @@ def search():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
-

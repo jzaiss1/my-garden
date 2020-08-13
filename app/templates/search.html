@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="/static/theme.css">
     </head>
     <body>
         <h1><center>My Garden Search</center></h1>
@@ -12,11 +12,13 @@
             <button type="submit">
             </button>
         </form>
+        <br><hr>
         <center>
         {% for item in data %}
             <tr>
                 <td>{{item[1]}}</td>
                 <td>{{item[2]}}</td>
+                <hr>
             </tr>
         {% endfor %}
         </center>

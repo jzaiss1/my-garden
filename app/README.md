@@ -143,7 +143,7 @@ See `mygarden.ini` for the uWSGI Configuration
 See `mygarden.service` for the configuration
 
 ```bash
-sudo cp mygarden.service /etc/systemd/system/ 
+sudo cp mygarden.service /etc/systemd/system/
 ```
 
 Configure the mygarden uWSGI service and enable to start at boot
