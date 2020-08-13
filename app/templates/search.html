@@ -5,30 +5,52 @@
 <!-- John Zaiss -->
 
 <head>
-  <title>My Garden Responsive Design</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/css/styles.css">
-  <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="/static/js/mustache.js"></script>
-  <script type="text/javascript" src="/static/js/data.js"></script>
+    <title>My Garden Responsive Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/mustache.js"></script>
+    <script type="text/javascript" src="/static/js/data.js"></script>
 </head>
-    <body>
-        <h1><center>My Garden Search</center></h1>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <img id="header" src="/static/images/Picture1.png" alt="Start digging">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <ul class="topnav">
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="/create">Create</a></li>
+                    <li><a href="/update">Update</a></li>
+                    <li><a href="/dig">Dig in My Garden</a></li>
+                    <li class="right"><a href="/search">Search</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>
+            <center>My Garden Search</center>
+        </h1>
         <form class="example" method="post" action="" style="margin:auto;max-width:600px">
             <input type="text" placeholder="Search by plant name or details, or all to see all the data" name="plant">
             <button type="submit">
             </button>
         </form>
-        <br><hr>
+        <br>
+        <hr>
         <center>
-        {% for item in data %}
+            {% for item in data %}
             <tr>
                 <td>{{item[1]}}</td>
                 <td>{{item[2]}}</td>
                 <hr>
             </tr>
-        {% endfor %}
+            {% endfor %}
         </center>
-    </body>
+    </div>
+</body>
