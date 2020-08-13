@@ -42,14 +42,15 @@
           </form>
         <br>
         <hr>
-        <left>
+        <center>
+            <table>
             {% for item in data %}
             <tr>
-                <td>{{item[1]}}</td>
-                <td>{{item[2]}}</td>
+                <td>{{item[1]}}<br>Zone(s): {{item[2]}}</td>
                 <hr>
             </tr>
             {% endfor %}
-        </left>
+            </table>
+        </center>
     </div>
 </body>
