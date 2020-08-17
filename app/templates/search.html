@@ -37,19 +37,20 @@
             <center>My Garden Search</center>
         </h1>
         <form class="form-inline mr-auto" method="post" action="">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search plant by full name" aria-label="Search" name="plant">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search plant by full name" aria-label="Search"
+                name="plant">
             <button class="btn btn-outline-success btn-rounded btn-sm my-0" type="submit">Search</button>
-          </form>
+        </form>
         <br>
         <hr>
         <center>
             <table>
-            {% for item in data %}
-            <tr>
-                <td>{{item[1]}}<br>Zone(s): {{item[2]}}</td>
+                {% for item in data %}
+                <tr>
+                    <td>{{item[1]}}<br>Zone(s): {{item[2]}}</td>
+                </tr>
                 <hr>
-            </tr>
-            {% endfor %}
+                {% endfor %}
             </table>
         </center>
     </div>

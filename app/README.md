@@ -130,6 +130,12 @@ Install Flask and uWSGI
 pip install uwsgi flask flask-mysql
 ```
 
+Once the installations are complete deactivate the virtual environment
+
+```bash
+deactivate
+```
+
 ## My Garden Application files
 
 See `mygarden.py` for the application code
@@ -143,7 +149,7 @@ See `mygarden.ini` for the uWSGI Configuration
 See `mygarden.service` for the configuration
 
 ```bash
-sudo cp mygarden.service /etc/systemd/system/
+sudo cp setup/mygarden.service /etc/systemd/system/
 ```
 
 Configure the mygarden uWSGI service and enable to start at boot
@@ -153,12 +159,20 @@ sudo systemctl start mygarden
 sudo systemctl enable mygarden
 ```
 
+## Copy the application code
+
+Clone the repo and copy the app folder to the mygarden directory
+
+```bash
+cp -r ~/mygarden/app .
+```
+
 ## Configure Nginx to Proxy Requests
 
 See `mygarden` for the block configuration
 
 ```bash
-sudo cp mygarden /etc/nginx/sites-available/
+sudo cp setup/mygarden /etc/nginx/sites-available/
 ```
 
 Link the file to the `sites-enabled` directory
