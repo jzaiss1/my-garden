@@ -7,7 +7,7 @@ import json
 mydb = mysql.connector.connect(
   host="mygarden-db-instance.c0uwy4mfszo8.us-east-2.rds.amazonaws.com",
   user="mygarden_user",
-  passwd="11IOIifCQo!",
+  passwd="",
   database="mygarden"
 )
 

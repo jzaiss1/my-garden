@@ -3,10 +3,10 @@
     {
       "blooms": "Winter Spring",
       "details": null,
-      "fertilization": null,
+      "fertilization": "Bi-weekly",
       "hardiness": "-10 to -20 F",
       "name": "Merlin Lenten Rose",
-      "spacing": null,
+      "spacing": "18-24\"",
       "statusID": null,
       "tags": [
         "Deer Resistant",
@@ -20,8 +20,8 @@
     {
       "blooms": "Early Spring to Mid-Spring",
       "details": "Honeymoon Series Lenten Rose",
-      "fertilization": null,
-      "hardiness": null,
+      "fertilization": "Bi-weekly",
+      "hardiness": "-10 to -20 F",
       "name": "French Kiss",
       "spacing": "18-24\"",
       "statusID": null,
@@ -31,14 +31,14 @@
         "Perennial"
       ],
       "totalSize": "18-24\" H",
-      "watering": null,
+      "watering": "Normal",
       "zones": "4-9"
     },
     {
       "blooms": "Early Spring to Mid-Spring",
       "details": "Honeymoon Series Lenten Rose",
-      "fertilization": null,
-      "hardiness": null,
+      "fertilization": "Bi-weekly",
+      "hardiness": "-10 to -20 F",
       "name": "Spanish Flare",
       "spacing": "18-24\"",
       "statusID": null,
@@ -48,7 +48,7 @@
         "Perennial"
       ],
       "totalSize": "18-24\" H",
-      "watering": null,
+      "watering": "Normal",
       "zones": "4-9"
     },
     {
@@ -87,7 +87,7 @@
     {
       "blooms": "Early to midsummer",
       "details": null,
-      "fertilization": null,
+      "fertilization": "Bi-weekly",
       "hardiness": "-15 F",
       "name": "Pyromania Backdraft",
       "spacing": "24\" to 30\"",
