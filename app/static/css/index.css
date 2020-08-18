@@ -8,7 +8,7 @@ body {
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid #35A513;
   float: left;
   width: 80%;
   background: #f1f1f1;
@@ -17,15 +17,15 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
+  background: #42a9d4;
   color: white;
   font-size: 17px;
-  border: 1px solid grey;
+  border: 1px solid #35A513;
   border-left: none;
   cursor: pointer;
 }
 form.example button:hover {
-  background: #0b7dda;
+  background: #42a9d4;
 }
 form.example::after {
   content: "";
