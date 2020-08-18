@@ -43,14 +43,16 @@
         </form>
         <br>
         <hr>
-        <center>
-            <table class="resultsTable">
+        <left>
+            <table>
                 {% for item in data %}
                 <tr>
-                    <td>{{item[1]}}<br>Zone(s): {{item[2]}}</td>
+                    <td>{{item[1]}}<br>
+                    Bloons in {{item[3]}} and grows to be {{item[3]}}</td>
+                    <hr>
                 </tr>
                 {% endfor %}
             </table>
-        </center>
+        </left>
     </div>
 </body>
