@@ -53,7 +53,7 @@ def search():
     if request.method == "POST":
         plant = request.form['plant']
         # search by plantName
-        cur.execute("SELECT PlantID, plantName, totalSize, blooms from Plants WHERE plantName LIKE %s", (plant))
+        cur.execute("SELECT * from Plants WHERE plantName LIKE %s", (plant))
         conn.commit()
         data = cur.fetchall()
         # all in the search box will return all the tuples
