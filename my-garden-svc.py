@@ -5,10 +5,10 @@ import csv
 import json
 
 mydb = mysql.connector.connect(
-  host="",
-  user="",
-  passwd="",
-  database=''
+  host="mygarden-db-instance.c0uwy4mfszo8.us-east-2.rds.amazonaws.com",
+  user="mygarden_user",
+  passwd="11IOIifCQo!",
+  database="mygarden"
 )
 
 mycursor = mydb.cursor()
@@ -60,9 +60,9 @@ def queryAllPlants():
     for x in myresult:
       print(x)
 
-# with open('samples/sample-plants.json') as f:
-#   data = json.load(f)
+with open('samples/sample-plants.json') as f:
+  data = json.load(f)
 
-# processPlant(data)
+processPlant(data)
 
-queryAllPlants()
+# queryAllPlants()

@@ -1,10 +1,10 @@
 server {
     listen 80;
-    server_name mygarden.com www.mygarden.com;
+    server_name ec2-13-59-50-31.us-east-2.compute.amazonaws.com;
 
     location / {
         include uwsgi_params;
-        uwsgi_pass unix:/home/garden/mygarden/mygarden.sock;
+        uwsgi_pass unix:/home/ubuntu/mygarden/mygarden.sock;
 
         # when a client closes the connection then keep the channel to uwsgi open. Otherwise uwsgi throws an IOError
         uwsgi_ignore_client_abort on;
