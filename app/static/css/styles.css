@@ -114,3 +114,51 @@ ul.topnav li.right {
 row.borders {
   border: 10px;
 }
+
+table.resultsTable {
+  border: 1px solid #35A513;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.resultsTable td, table.resultsTable th {
+  border: 1px solid #35A513;
+  padding: 3px 2px;
+}
+table.resultsTable tbody td {
+  font-size: 13px;
+  font-weight: bold;
+  color: #35A513;
+}
+table.resultsTable thead {
+  background: #42A9D4;
+  background: -moz-linear-gradient(top, #71bedf 0%, #55b1d8 66%, #42A9D4 100%);
+  background: -webkit-linear-gradient(top, #71bedf 0%, #55b1d8 66%, #42A9D4 100%);
+  background: linear-gradient(to bottom, #71bedf 0%, #55b1d8 66%, #42A9D4 100%);
+  border-bottom: 2px solid #35A513;
+}
+table.resultsTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #35A513;
+}
+table.resultsTable thead th:first-child {
+  border-left: none;
+}
+
+table.resultsTable tfoot td {
+  font-size: 14px;
+}
+table.resultsTable tfoot .links {
+  text-align: right;
+}
+table.resultsTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}

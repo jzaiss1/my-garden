@@ -44,13 +44,11 @@
         <br>
         <hr>
         <center>
-            <table>
+            <table class="resultsTable">
                 {% for item in data %}
                 <tr>
                     <td>{{item[1]}}<br>Zone(s): {{item[2]}}</td>
-                    
                 </tr>
-                <hr>
                 {% endfor %}
             </table>
         </center>
