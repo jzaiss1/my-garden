@@ -27,19 +27,19 @@ def style():
     return render_template('style-guide.html')
 
 @app.route("/create")
-def style():
+def create():
     return render_template('create.html')
 
 @app.route("/update")
-def style():
+def update():
     return render_template('update.html')
 
 @app.route("/dig")
-def style():
+def dig():
     return render_template('dig.html')
 
 @app.route('/api/plants')
-def users():
+def plants():
     cur.execute("SELECT * FROM Plants")
     rv = cur.fetchall()
     row_headers=[x[0] for x in cur.description] #this will extract row headers
