@@ -26,6 +26,18 @@ def hello():
 def style():
     return render_template('style-guide.html')
 
+@app.route("/create")
+def style():
+    return render_template('create.html')
+
+@app.route("/update")
+def style():
+    return render_template('update.html')
+
+@app.route("/dig")
+def style():
+    return render_template('dig.html')
+
 @app.route('/api/plants')
 def users():
     cur.execute("SELECT * FROM Plants")
