@@ -29,18 +29,6 @@ ufw enable
 ufw status
 ```
 
-Enable External Access for garden
-
-Set up SSH keys <https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804>
-
-```bash
-ssh-keygen
-Enter file in which to save the key (/your_home/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-```
-
-- [ ] TODO: Revisit SSH keys, first attempt failed
-
 ## Install Nginx
 
 ```bash
@@ -198,11 +186,3 @@ Configure the Firewall
 ```bash
 sudo ufw allow 'Nginx Full'
 ```
-
-## References
-
-<https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04>
-
-<https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04>
-
-<https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04>
